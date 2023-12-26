@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stock: Profit or Loss</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <header>
+            <nav>
+                <h3>
+                    <a href="https://urvish-portfolio.vercel.app/" target="_blank" class="nav-link">Urvish Patel</a>
+                </h3>
+            </nav>
+        </header>
+        <main class="main container profit-loss-theme">
+            <section class="section input">
+                <h1 class="hero">Check Profit/ Loss of Your Stock</h1>
+                <label for="purchase-price">Purchase Price</label>
+                <input type="number" min="1" name="purchase-price" id="purchase-price" class="purchase-price">
+
+                <label for="stock-quantity">Stock Quantity</label>
+                <input type="number" min="1" name="stock-quantity" id="stock-quantity" class="stock-quantity">
+
+                <label for="current-price">Current Stock Price</label>
+                <input type="number" min="1" name="current-price" id="current-price" class="current-price">
+
+                <button class="btn-check" onclick="checkProfitLoss()">Check</button>
+                <button class="btn-reset" onclick="resetFields()">Reset</button>
+
+            </section>
+
+            <section class="section output">
+                <h3 class="message display-none"></h3>
+            </section>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </main>
+        <footer>
+            <ul class="social-links">
+                <li>
+                    <a href="https://github.com/urvish-xyz" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/UrvishXyz" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/urvish-xyz/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
